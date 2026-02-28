@@ -1,292 +1,120 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
   margin: 0 auto;
-  margin-top: 0px;
-  padding: 0; /* 불필요한 패딩 제거 */
-  box-sizing: border-box; /* 패딩이 width에 포함되도록 설정 */
-  display: flex;
-  flex-direction: column;
   width: 393px;
   height: 852px;
-  //   justify-content: center;
+  background: linear-gradient(180deg, #912642 0%, #d93a63 100%);
+  display: flex;
+  justify-content: center;
   align-items: center;
-  overflow-x: hidden;
-  background: linear-gradient(
-    180deg,
-    #ae264a 0%,
-    #af2349 16.5%,
-    #a32145 31.5%,
-    #9f2143 52.5%,
-    #8f1e3d 76.5%,
-    #67182f 100%
-  );
+  overflow: hidden;
 `;
 
-export const Background = styled.div`
-  margin-top: 30px;
-  width: 343px;
-  height: 696px;
-  flex-shrink: 0;
-  background: #fff;
-  box-shadow: 0px 0px 10px 0px #fff;
+export const BackLogo = styled.img`
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  z-index: 1;  
+`;
+
+export const LetterWrapper = styled.div`
+  position: relative;
+  top:2%;
+  width: 95%;
+  z-index: 2;  
+`;
+export const LetterBg = styled.img`
+  width: 100%;
+  display: block;
+`;
+export const LetterLogo = styled.img`
+  position: absolute;
+  top: 95%;        
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;      
+`;
+export const Content = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 30px;
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
   align-items: center;
-  position: relative; /* 상대적 위치 지정 */
-  z-index: 0; /* Lion이 배경 뒤로 안 가게 조정 */
 `;
 
-export const Lion = styled.div`
-  width: 256.403px;
-  height: 255.599px;
-  flex-shrink: 0;
-  position: absolute; /* Background 안에서 절대 위치 */
-  top: 58%; /* 화면 중앙 정렬 */
-  left: 30%;
-  transform: translate(-50%, -50%) rotate(-7.052deg); /* 중앙 정렬 + 회전 적용 */
-  z-index: -1; /* Background보다 뒤로 안 가게 유지 */
-`;
-
-export const Logo = styled.div`
+export const Logo = styled.img`
   width: 60px;
-  height: 60px;
-  flex-shrink: 0;
-  margin-top: 29px;
+  margin-bottom: 30px;
 `;
 
-export const Title = styled.div`
-  color: var(--1, #7f1833);
+export const Dongduk = styled.div`
+  width: 280px;
+  height: 33px;
+  color: #912642;
   text-align: center;
-  font-family: "Pretendard Variable";
-  font-size: 25px;
+  font-family: Pretendard;
+  font-size: 13px;
   font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 230.769% */
+`
+export const Title = styled.div`
+  text-align: center;
+  font-size: 20px;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.5px;
-  margin-top: 35px;
+  color: #7f1833;
+  margin-bottom: 40px;
 `;
 
 export const Input = styled.div`
-  margin-top: 55px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  justify-content: center;
-  align-items: center;
+  width: 75%;
 `;
 
-export const Name = styled.div`
+export const InputBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-  align-items: start;
+  gap: 5px;
 
   div {
-    color: #000;
-    text-align: center;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
+    font-size: 14px;
     font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.3px;
   }
 
   input {
-    width: 230px;
     height: 40px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    border: 1px solid var(--1, #7f1833);
-    color: black;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.5px;
-    padding-left: 14px;
-    background: transparent;
-    outline: none; /* 포커스 시 기본 테두리 제거 */
-  }
-
-  input::placeholder {
-    color: #888787;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.5px;
+    border-radius: 6px;
+    border: 1.2px solid #DC3B65;
+    background: rgba(255, 242, 242, 0.20);
+    padding-left: 12px;
+    font-size: 14px;
+    outline: none;
   }
 `;
 
-export const Number = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-  align-items: start;
-
-  div {
-    color: #000;
-    text-align: center;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.3px;
-  }
-
-  input {
-    width: 230px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    border: 1px solid var(--1, #7f1833);
-    color: black;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.5px;
-    padding-left: 14px;
-    background: transparent;
-    outline: none; /* 포커스 시 기본 테두리 제거 */
-  }
-
-  input::placeholder {
-    color: #888787;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.5px;
-  }
+export const Text = styled.div`
+  width: 96px;
+  color: #DC3B65;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
 `;
-
-export const Phone = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: center;
-  align-items: start;
-
-  div {
-    color: #000;
-    text-align: center;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.3px;
-  }
-
-  input {
-    width: 230px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    border: 1px solid var(--1, #7f1833);
-    color: black;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.5px;
-    padding-left: 14px;
-    background: transparent;
-    outline: none; /* 포커스 시 기본 테두리 제거 */
-  }
-
-  input::placeholder {
-    color: #888787;
-    font-family: "Pretendard Variable";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.5px;
-  }
-`;
-
-export const Go = styled.div`
-  margin-top: 35px;
-  display: flex;
-  width: 230px;
-  height: 40px;
-  padding: 9px 99px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
+export const GoButton = styled.button`
+  margin-top: 20px;
+  height: 45px;
   border-radius: 5px;
-  background: var(--1, #7f1833);
-
-  div {
-    color: #fff;
-    text-align: center;
-    font-family: "Pretendard Variable";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.32px;
-  }
-`;
-
-export const Letter2 = styled.div`
-  width: 355.5px;
-  height: 33px;
-  flex-shrink: 0;
-  filter: drop-shadow(0px 0px 20px #fff);
-  position: absolute;
-  bottom: 200px; /* 🔥 배경 아래쪽으로 이동 */
-  left: 50%;
-  transform: translateX(-50%); /* 가로 중앙 정렬 */
-  z-index: 1; /* 🔥 입력 박스보다 위에 오도록 조정 */
-
-  img {
-    height: 33px;
-    flex-shrink: 0;
-  }
-`;
-
-export const Letter = styled.div`
-  width: 355px;
-  height: 182px;
-  flex-shrink: 0;
-  filter: drop-shadow(0px 0px 20px #fff);
-  position: absolute;
-  bottom: 25px; /* 🔥 배경 아래쪽으로 이동 */
-  left: 50%;
-  transform: translateX(-50%); /* 가로 중앙 정렬 */
-  z-index: 1; /* 🔥 입력 박스보다 위에 오도록 조정 */
-`;
-
-export const Letter1 = styled.div`
-  width: 353px;
-  height: 102px;
-  flex-shrink: 0;
-  //   filter: drop-shadow(0px 0px 20px #fff);
-  position: absolute;
-  bottom: 25px; /* 🔥 배경 아래쪽으로 이동 */
-  left: 50%;
-  transform: translateX(-50%); /* 가로 중앙 정렬 */
-  z-index: 1; /* 🔥 입력 박스보다 위에 오도록 조정 */
-  padding: 0;
-
-  img {
-    width: 353px;
-    height: 102px;
-  }
+  border: none;
+  background: #7f1833;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 `;
