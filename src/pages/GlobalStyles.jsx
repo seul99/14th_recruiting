@@ -20,10 +20,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 100vh;
-      max-width: 390px;
-  max-height: 844px;
-    height: 100%;
     overflow-x: hidden; /* 가로 스크롤 방지 */
     font-family: 'Pretendard Variable', sans-serif;
     align-items: center;
