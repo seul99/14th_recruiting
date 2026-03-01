@@ -76,11 +76,11 @@ const Passed = ({ dataList }) => {
               <br />
               <br />
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeLDGP2ussQtthzsPPFH2LJLwfFENPoJY0FrLy6WmkTfsPKXQ/viewform?usp=sharing&ouid=106601036526044914289"
+                href="https://discord.gg/zXppwGwMN"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://docs.google.com/forms
+                링크 [ https://discord.gg]
               </a>
               <br />
               <br />
