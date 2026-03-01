@@ -19,7 +19,7 @@ const Main = ({ dataList }) => {
     } else {
       return `${numbers.slice(0, 3)}-${numbers.slice(3, 7)}-${numbers.slice(
         7,
-        11
+        11,
       )}`;
     }
   };
@@ -32,9 +32,7 @@ const Main = ({ dataList }) => {
   const handleSearch = () => {
     const matchedData = dataList.find(
       (item) =>
-        item.Name === name &&
-        item.Number === number &&
-        item.Phone === phone
+        item.Name === name && item.Number === number && item.Phone === phone,
     );
 
     if (matchedData) {
@@ -46,9 +44,7 @@ const Main = ({ dataList }) => {
 
   return (
     <M.Container>
-      <M.BackLogo
-        src={`${process.env.PUBLIC_URL}/images/BackLogo.svg`}
-      />
+      <M.BackLogo src={`${process.env.PUBLIC_URL}/images/BackLogo.svg`} />
 
       <M.LetterWrapper>
         <M.LetterBg
@@ -66,11 +62,9 @@ const Main = ({ dataList }) => {
             alt="사자"
           />
 
-          <M.Dongduk>
-            동덕여자대학교 멋쟁이사자처럼
-          </M.Dongduk>
+          <M.Dongduk>동덕여자대학교 멋쟁이사자처럼</M.Dongduk>
           <M.Title>
-            14기 아기사자  <br />
+            14기 아기사자 <br />
             합격자 조회
           </M.Title>
 
@@ -106,9 +100,7 @@ const Main = ({ dataList }) => {
               />
             </M.InputBox>
 
-            <M.GoButton onClick={handleSearch}>
-              조회
-            </M.GoButton>
+            <M.GoButton onClick={handleSearch}>조회</M.GoButton>
           </M.Input>
         </M.Content>
       </M.LetterWrapper>
