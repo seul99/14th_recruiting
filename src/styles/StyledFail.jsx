@@ -137,7 +137,7 @@ export const Text = styled.div`
   line-height: 1.5;
 
   @media (max-width: 480px) {
-    font-size: 14px; /* 글자 크기 키움 */
+    font-size: 13px; /* 글자 크기 키움 */
     width: 100%; /* 좌우 여백 확보 */
     margin: 0 auto;
   }
