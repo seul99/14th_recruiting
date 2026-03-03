@@ -49,7 +49,7 @@
     "Phone": "010-4099-7831"
   },
   {
-    "Result": "check2",
+    "Result": "check1",
     "Id": 40,
     "Name": "박정민",
     "Number": "20240998",
@@ -91,7 +91,7 @@
     "Phone": "010-2485-4701"
   },
   {
-    "Result": "check2",
+    "Result": "check1",
     "Id": 46,
     "Name": "김민경",
     "Number": "20240988",
@@ -112,7 +112,7 @@
     "Phone": "010-9966-7964"
   },
   {
-    "Result": "check2",
+    "Result": "check1",
     "Id": 49,
     "Name": "계은혜",
     "Number": "20240217",
@@ -267,7 +267,7 @@
     "Phone": "010-6369-1405"
   },
   {
-    "Result": "check1",
+    "Result": "check2",
     "Id": 71,
     "Name": "이시연",
     "Number": "20241523",
