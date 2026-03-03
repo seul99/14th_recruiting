@@ -20,9 +20,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
     overflow-x: hidden; /* 가로 스크롤 방지 */
     font-family: 'Pretendard Variable', sans-serif;
+    align-items: center;
   }
 
   #root {

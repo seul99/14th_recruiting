@@ -6,6 +6,7 @@ import Main from "./pages/Main";
 import Passed from "./pages/Passed";
 import data from "./data.json";
 import Fail from "./pages/Fail";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   const [dataList, setDataList] = useState([]);
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Main dataList={dataList} />} />

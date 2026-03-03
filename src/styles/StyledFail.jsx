@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   margin: 0 auto;
-  width: 393px;
-  height: 852px;
+  width: 100%;
+  height: 100%;
+  max-width: 390px;
+  max-height: 844px;
   background: linear-gradient(180deg, #912642 0%, #d93a63 100%);
   display: flex;
   justify-content: center;
@@ -38,6 +40,7 @@ export const LetterWrapper = styled.div`
 export const LetterBg = styled.img`
   width: 100%;
   display: block;
+  margin-top: 10%;
 `;
 export const LetterLogo = styled.img`
   position: absolute;
@@ -59,7 +62,8 @@ export const Content = styled.div`
 
 export const Logo = styled.img`
   width: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 10%;
 `;
 
 export const Dongduk = styled.div`
@@ -78,7 +82,7 @@ export const Title = styled.div`
   font-size: 20px;
   font-weight: 700;
   color: #7f1833;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `;
 
 export const Line = styled.img`
@@ -95,7 +99,7 @@ export const MainContent = styled.div`
 `;
 
 export const Name = styled.div`
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -130,4 +134,11 @@ export const Text = styled.div`
   line-height: normal;
   text-align: center;
   color: #383838;
+  line-height: 1.5;
+
+  @media (max-width: 480px) {
+    font-size: 13px; /* 글자 크기 키움 */
+    width: 100%; /* 좌우 여백 확보 */
+    margin: 0 auto;
+  }
 `;

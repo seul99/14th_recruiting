@@ -58,7 +58,7 @@ const Fail = ({ dataList }) => {
               불이익은 없습니다.
               <br />
               <br />
-              앞으로는 도전을 진심으로 응원하겠습니다.
+              앞으로의 도전을 진심으로 응원하겠습니다.
             </F.Text>
           </F.MainContent>
         </F.Content>
